@@ -16,7 +16,7 @@
 - CSS
 - HTML
 - ES6
-- VS Code
+- VS Code.
 
 
 ## How to Install
