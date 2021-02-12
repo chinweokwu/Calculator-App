@@ -18,6 +18,9 @@
 - ES6
 - VS Code.
 
+## Live Demo
+
+[Live Demo Link](https://silly-haibt-711024.netlify.app/)
 
 ## How to Install
 
