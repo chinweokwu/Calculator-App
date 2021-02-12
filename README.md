@@ -18,6 +18,9 @@
 - ES6
 - VS Code.
 
+## Live Demo
+
+[Live Demo Link](https://silly-haibt-711024.netlify.app/)
 
 ## How to Install
 
@@ -44,10 +47,10 @@ You will also see any lint errors in the console.
 
 ## Authors  ![Hireable](https://img.shields.io/badge/HIREABLE-YES-yellowgreen&?style=for-the-badge)
 
-👤 **Morah Paul**
-
-- GitHub:[@github/chinweokwu](https://github.com/chinweokwu)
-- Linkedin:[linkedin/morah](https://www.linkedin.com/)
+👤 **Paul chinweokwu Morah**
+- Github: [@paulmorah](https://github.com/chinweokwu)
+- Twitter: [@Morah89820846](https://twitter.com/Morah89820846)
+- Linkedin: [Paul Chinweoku Morah](https://www.linkedin.com/in/morah-paul/)
 
 ## 🤝 Contributing
 
