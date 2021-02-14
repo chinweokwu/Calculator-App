@@ -70,6 +70,6 @@ const GroupFive = [
   },
 ];
 
-export default {
+export {
   GroupOne, GroupTwo, GroupThree, GroupFour, GroupFive,
 };
