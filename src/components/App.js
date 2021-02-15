@@ -12,11 +12,11 @@ class App extends React.Component {
     };
   }
 
-  // handleClick = buttonName => {
-  //   this.setState(previous => {
-  //     Calculate(previous, buttonName);
-  //   });
-  // }
+  handleClick = buttonName => {
+    this.setState(previous => {
+      Calculate(previous, buttonName);
+    });
+  }
 
   render() {
     const { total, next } = this.state;
