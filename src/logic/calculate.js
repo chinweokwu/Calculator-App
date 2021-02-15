@@ -1,4 +1,4 @@
-import Operate from './operate';
+import Operator from './operate';
 
 const Calculate = (data, buttonName) => {
   const { total, next } = data;
@@ -8,7 +8,7 @@ const Calculate = (data, buttonName) => {
   } else if (buttonName === '+/-') {
     result = { total: total * -1, next: next * -1 };
   } else if (['+', '-', '*', '÷', '%'].includes(buttonName)) {
-    result = { total: Operate(total, next, buttonName), next: 0 };
+    result = { total: Operator(total, next, buttonName), next: 0 };
   }
   return result;
 };
