@@ -2,24 +2,24 @@ import Big from 'big.js';
 
 const Operator = (numberOne, numberTwo, operation) => {
   let result = 0;
-  const i = Big(numberOne);
-  const j = Big(numberTwo);
+  const total = Big(numberOne);
+  const next = Big(numberTwo);
 
   switch (operation) {
     case '+':
-      result = i + j;
+      result = total + next;
       break;
 
     case '-':
-      result = i - j;
+      result = total - next;
       break;
 
     case '*':
-      result = i * j;
+      result = total * next;
       break;
 
     case '/':
-      result = i / j;
+      result = total / next;
       break;
 
     default:
