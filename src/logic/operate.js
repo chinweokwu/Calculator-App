@@ -7,23 +7,23 @@ const Operator = (numberOne, numberTwo, operation) => {
 
   switch (operation) {
     case '+':
-      result = total + next;
+      result = total.plus(next);
       break;
 
     case '-':
-      result = total - next;
+      result = total.minus(next);
       break;
 
     case '*':
-      result = total * next;
+      result = total.times(next);
       break;
 
     case '/':
-      result = total / next;
+      result = total.div(next);
       break;
 
     default:
-      result /= 100;
+      result = result.div(100);
       break;
   }
   return result;
