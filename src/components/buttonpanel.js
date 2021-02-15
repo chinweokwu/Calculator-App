@@ -1,11 +1,19 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './button';
 import {
   GroupOne, GroupTwo, GroupThree, GroupFour, GroupFive,
 } from '../buttonGroups';
 
-const ButtonPanel = () => {
-  const displayButton = element => <Button name={element.name} />;
+const ButtonPanel = props => {
+  const handleClick = buttonName => props.clickHandler(buttonName);
+  const displayButton = element => (
+    <Button
+      key={element.id}
+      name={element.name}
+      clickHandler={handleClick}
+    />
+  );
 
   const groupOne = GroupOne.map(displayButton);
   const groupTwo = GroupTwo.map(displayButton);
@@ -22,6 +30,10 @@ const ButtonPanel = () => {
       <div>{groupFive}</div>
     </div>
   );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;

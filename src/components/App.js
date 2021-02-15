@@ -1,14 +1,32 @@
 import React from 'react';
 import Display from './display';
 import ButtonPanel from './buttonpanel';
-// eslint-disable-next-line no-unused-vars
 import Calculate from '../logic/calculate';
 
-const App = () => (
-  <>
-    <Display />
-    <ButtonPanel />
-  </>
-);
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: null,
+      next: null,
+    };
+  }
+
+  handleClick = buttonName => {
+    this.setState(previous => {
+      Calculate(previous, buttonName);
+    });
+  }
+
+  render() {
+    const { total, next } = this.state;
+    return (
+      <>
+        <Display result={total ?? next} />
+        <ButtonPanel clickHandler={this.handleClick} />
+      </>
+    );
+  }
+}
 
 export default App;
