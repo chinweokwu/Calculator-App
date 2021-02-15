@@ -22,8 +22,8 @@ class App extends React.Component {
     const { total, next } = this.state;
     return (
       <>
-        {/* <Display result={total ?? next} />
-        <ButtonPanel handleClick={this.handleClick} /> */}
+        <Display result={total ?? next} />
+        <ButtonPanel handleClick={this.handleClick} />
       </>
     );
   }
