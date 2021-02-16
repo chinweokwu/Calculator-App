@@ -5,7 +5,7 @@ import {
 } from '../buttonGroups';
 
 const ButtonPanel = () => {
-  const displayButton = element => <Button name={element.name} />;
+  const displayButton = e => <Button key={e.id} name={e.name} />;
 
   const groupOne = GroupOne.map(displayButton);
   const groupTwo = GroupTwo.map(displayButton);
