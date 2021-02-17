@@ -54,7 +54,7 @@ const GroupFour = [
     name: '3',
   },
   {
-    name: '+',
+    name: '/',
   },
 ];
 

@@ -1,32 +1,36 @@
 import Big from 'big.js';
 
-const Operator = (numberOne, numberTwo, operation) => {
+const operate = (numberOne, numberTwo, operation) => {
+  if (numberOne === null || numberTwo === null) {
+    return 0;
+  }
+
   let result = 0;
   const total = Big(numberOne);
   const next = Big(numberTwo);
 
   switch (operation) {
     case '+':
-      result = total.plus(next);
+      result = (parseFloat(total) + parseFloat(next)).toString();
       break;
 
     case '-':
-      result = total.minus(next);
+      result = total - next;
       break;
 
-    case '*':
-      result = total.times(next);
+    case 'X':
+      result = total * next;
       break;
 
     case '/':
-      result = total.div(next);
+      result = total / next;
       break;
 
     default:
-      result = result.div(100);
       break;
   }
-  return result;
+
+  return (result === Infinity ? 'Error' : result);
 };
 
-export default Operator;
+export { operate as default };
