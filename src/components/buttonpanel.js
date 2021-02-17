@@ -3,9 +3,14 @@ import Button from './button';
 import {
   GroupOne, GroupTwo, GroupThree, GroupFour, GroupFive,
 } from '../buttonGroups';
+/* eslint-disable react/prop-types, no-console, arrow-body-style */
+const ButtonPanel = props => {
+  const handleClick = buttonName => {
+    const { clickHandler } = props;
+    clickHandler(buttonName);
+  };
 
-const ButtonPanel = () => {
-  const displayButton = e => <Button key={e.id} name={e.name} />;
+  const displayButton = e => <Button key={e.id} name={e.name} buttonPressed={handleClick} />;
 
   const groupOne = GroupOne.map(displayButton);
   const groupTwo = GroupTwo.map(displayButton);
@@ -25,3 +30,4 @@ const ButtonPanel = () => {
 };
 
 export default ButtonPanel;
+/* eslint-enable react/prop-types, no-console, arrow-body-style */
