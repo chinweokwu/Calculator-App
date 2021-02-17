@@ -10,6 +10,7 @@ class App extends React.Component {
     this.state = {
       total: null,
       next: null,
+      operation: null,
     };
   }
 
@@ -18,10 +19,10 @@ class App extends React.Component {
   }
 
   render() {
-    const { total, next } = this.state;
+    const { total, next, operation } = this.state;
     return (
       <>
-        <Display result={next ?? total} />
+        <Display result={next || operation || total || '0'} />
         <ButtonPanel clickHandler={this.buttonPressed} />
       </>
     );
