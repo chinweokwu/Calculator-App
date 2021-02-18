@@ -1,5 +1,6 @@
 import Big from 'big.js';
 
+
 const operate = (numberOne, numberTwo, operation) => {
   if (numberOne === null || numberTwo === null) {
     return 0;
@@ -11,6 +12,7 @@ const operate = (numberOne, numberTwo, operation) => {
 
   switch (operation) {
     case '+':
+
       result = (parseFloat(total) + parseFloat(next)).toString();
       break;
 
@@ -34,3 +36,4 @@ const operate = (numberOne, numberTwo, operation) => {
 };
 
 export { operate as default };
+
