@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-/* eslint-disable react/prop-types, no-console, arrow-body-style */
+
 const Button = props => {
   const { name } = props;
 
@@ -13,7 +13,7 @@ const Button = props => {
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
+  buttonPressed: PropTypes.func.isRequired,
 };
 
 export default Button;
-/* eslint-enable react/prop-types, no-console, arrow-body-style */
