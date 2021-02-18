@@ -4,7 +4,7 @@ import Button from './button';
 import {
   GroupOne, GroupTwo, GroupThree, GroupFour, GroupFive,
 } from '../buttonGroups';
-/* eslint-disable react/prop-types, no-console, arrow-body-style */
+
 const ButtonPanel = props => {
   const handleClick = buttonName => {
     const { clickHandler } = props;
@@ -35,4 +35,3 @@ ButtonPanel.propTypes = {
 };
 
 export default ButtonPanel;
-/* eslint-enable react/prop-types, no-console, arrow-body-style */
