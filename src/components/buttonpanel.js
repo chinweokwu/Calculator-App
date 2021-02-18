@@ -6,14 +6,12 @@ import {
 } from '../buttonGroups';
 
 const ButtonPanel = props => {
-  const handleClick = buttonName => props.clickHandler(buttonName);
-  const displayButton = element => (
-    <Button
-      key={element.id}
-      name={element.name}
-      clickHandler={handleClick}
-    />
-  );
+  const handleClick = buttonName => {
+    const { clickHandler } = props;
+    clickHandler(buttonName);
+  };
+
+  const displayButton = e => <Button key={e.id} name={e.name} buttonPressed={handleClick} />;
 
   const groupOne = GroupOne.map(displayButton);
   const groupTwo = GroupTwo.map(displayButton);

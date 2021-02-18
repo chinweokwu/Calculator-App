@@ -24,7 +24,7 @@ const GroupTwo = [
     name: '9',
   },
   {
-    name: '*',
+    name: 'X',
   },
 ];
 
@@ -54,7 +54,7 @@ const GroupFour = [
     name: '3',
   },
   {
-    name: '+',
+    name: '/',
   },
 ];
 

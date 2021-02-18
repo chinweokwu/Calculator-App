@@ -1,18 +1,21 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
 const Display = props => {
-  const { results } = props;
+  const { result } = props;
 
-  return (<input type="text" value={results} />);
+  return (
+    <p>
+      {result ?? '0'}
+    </p>
+  );
 };
 
 Display.defaultProps = {
-  results: '0',
+  result: null,
 };
 
 Display.propTypes = {
-  results: PropTypes.string,
+  result: PropTypes.string,
 };
 
 export default Display;
