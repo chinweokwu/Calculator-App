@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://silly-haibt-711024.netlify.app/)
+[Live Demo Link](https://epic-noyce-63beeb.netlify.app)
 
 ## How to Install
 
