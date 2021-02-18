@@ -24,7 +24,7 @@ const GroupTwo = [
     name: '9',
   },
   {
-    name: '*',
+    name: 'X',
   },
 ];
 
