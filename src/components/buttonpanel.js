@@ -10,7 +10,7 @@ const ButtonPanel = props => {
     clickHandler(buttonName);
   };
 
-  const displayButton = e => <Button key={e.id} name={e.name} buttonPressed={handleClick} />;
+  const displayButton = e => <Button key={e.name} name={e.name} buttonPressed={handleClick} />;
 
   const groupOne = GroupOne.map(displayButton);
   const groupTwo = GroupTwo.map(displayButton);

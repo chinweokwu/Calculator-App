@@ -8,11 +8,27 @@ const Button = props => {
     props.buttonPressed(name);
   }
 
-  return <button type="button" onClick={handleClick} id={name}>{name}</button>;
+  return (
+    <button
+      type="button"
+      className="btn"
+      onClick={handleClick}
+      id={name}
+    >
+      {name}
+    </button>
+  );
 };
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
+  // wide: PropTypes.bool,
+  // color: PropTypes.string,
+};
+
+Button.defaultProps = {
+  // color: 'orange',
+  // wide: false,
 };
 
 export default Button;

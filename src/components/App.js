@@ -22,8 +22,10 @@ class App extends React.Component {
     const { total, next, operation } = this.state;
     return (
       <>
-        <Display result={next || operation || total || '0'} />
-        <ButtonPanel clickHandler={this.buttonPressed} />
+        <div className="calculator">
+          <Display result={next || operation || total || '0'} />
+          <ButtonPanel clickHandler={this.buttonPressed} />
+        </div>
       </>
     );
   }
