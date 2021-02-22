@@ -21,17 +21,16 @@ const Quotes = () => {
 
   return (
     <div className="quote">
-      <div className="quote-box">
-        <div className="quote-container">
-          <div className="quote-button">
-            {' '}
-            <button type="button" onClick={handleClick}>Change Quotes</button>
-          </div>
-          <div className="main-quote">
-            <h3>{quotes}</h3>
-          </div>
-          <div className="author">{author}</div>
-        </div>
+      <div className="login-box">
+        <h3>{quotes}</h3>
+        <div className="author">{author}</div>
+        <button type="button" onClick={handleClick}>
+          <span />
+          <span />
+          <span />
+          <span />
+          Change Quotes
+        </button>
       </div>
     </div>
   );
