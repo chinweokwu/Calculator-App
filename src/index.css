@@ -4,6 +4,7 @@ body {
   font-family: sans-serif;
   background: linear-gradient(#141e30, #243b55) fixed;
 }
+
 .calculator {
   display: flex;
   text-align: center;
@@ -56,6 +57,13 @@ nav {
   border-radius: 4px;
 }
 
+.home {
+  text-align: center;
+  margin: 100px;
+  color: white;
+  font-size: 32px;
+}
+
 .quote {
   display: flex;
 }
@@ -69,6 +77,7 @@ nav {
   padding: 2em;
   border-radius: 10px 10px 10px 10px;
 }
+
 .login-box {
   position: absolute;
   top: 50%;
@@ -83,14 +92,14 @@ nav {
   backdrop-filter: blur(14px);
 }
 
-.login-box h3{
+.login-box h3 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
   text-align: center;
 }
 
-.login-box .author{
+.login-box .author {
   color: #dbdbdb6c;
   margin: 0 0 30px;
   text-align: center;

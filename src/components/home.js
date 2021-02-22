@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Home = () => (
-  <div>
+  <div className="home">
     <h1> Home Page</h1>
-    <p> </p>
+    <p> Welcome to Math Magicians Built with React</p>
   </div>
 );
 
