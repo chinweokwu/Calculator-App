@@ -25,11 +25,10 @@ body {
   font-weight: bold;
   font-size: 60px;
   align-items: center;
-  margin: 0
+  margin: 0;
 }
 
 .btn {
-
   height: 100px;
   color: #000;
   border: 2px solid #dbdbdb;
@@ -105,7 +104,7 @@ nav {
   text-align: center;
 }
 
-.login-box  button {
+.login-box button {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
