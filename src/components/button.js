@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 /* eslint-disable react/prop-types, no-console, arrow-body-style */
 const Button = props => {
   const { name } = props;
+  const operators = ['/', 'X', '+', '-', '='];
 
   function handleClick() {
     props.buttonPressed(name);
@@ -14,6 +15,7 @@ const Button = props => {
       className="btn"
       onClick={handleClick}
       id={name}
+      style={{ 'background-color': operators.includes(name) ? 'orange' : '', width: name === '0' ? '50%' : '25%' }}
     >
       {name}
     </button>
