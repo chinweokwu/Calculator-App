@@ -28,3 +28,25 @@
   padding: 10px;
   font-size: 25px;
 }
+
+nav {
+  display: flex;
+  text-align: center;
+}
+
+.quote {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: cadetblue;
+}
+
+.quote-box {
+  position: absolute;
+  background-color: coral;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  padding: 2em;
+  border-radius: 10px 10px 10px 10px;
+}
