@@ -15,7 +15,7 @@ const Button = props => {
       className="btn"
       onClick={handleClick}
       id={name}
-      style={{ 'background-color': operators.includes(name) ? 'orange' : '', width: name === '0' ? '50%' : '25%' }}
+      style={{ backgroundColor: operators.includes(name) ? 'orange' : '', width: name === '0' ? '50%' : '25%' }}
     >
       {name}
     </button>
