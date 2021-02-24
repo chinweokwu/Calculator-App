@@ -3,17 +3,34 @@ import PropTypes from 'prop-types';
 
 const Button = props => {
   const { name } = props;
+  const operators = ['/', 'X', '+', '-', '='];
 
   function handleClick() {
     props.buttonPressed(name);
   }
 
-  return <button type="button" onClick={handleClick} id={name}>{name}</button>;
+  return (
+    <button
+      type="button"
+      className="btn"
+      onClick={handleClick}
+      id={name}
+      style={{ backgroundColor: operators.includes(name) ? 'orange' : '', width: name === '0' ? '50%' : '25%' }}
+    >
+      {name}
+    </button>
+  );
 };
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  buttonPressed: PropTypes.func.isRequired,
+  // wide: PropTypes.bool,
+  // color: PropTypes.string,
+};
+
+Button.defaultProps = {
+  // color: 'orange',
+  // wide: false,
 };
 
 export default Button;

@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://epic-noyce-63beeb.netlify.app)
+[Live Demo Link](https://optimistic-hoover-f01a53.netlify.app/)
 
 ## How to Install
 

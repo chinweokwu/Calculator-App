@@ -1,32 +1,21 @@
 import React from 'react';
-import Display from './display';
-import ButtonPanel from './buttonpanel';
-import Calculate from '../logic/calculator';
+import { Switch, Route } from 'react-router-dom';
+import Calculator from './calculator';
+import Navbar from './navbar';
+import Home from './home';
+import Quotes from './quotes';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
+const App = () => (
+  <div>
+    <Navbar />
+    <Switch>
+      <Route path="/calculator" component={Calculator} />
+      <Route path="/quote" component={Quotes} />
+      <Route path="/" component={Home} />
+    </Switch>
 
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
+  </div>
 
-  buttonPressed = buttonName => {
-    this.setState(prevState => Calculate(prevState, buttonName));
-  }
-
-  render() {
-    const { total, next, operation } = this.state;
-    return (
-      <>
-        <Display result={next || operation || total || '0'} />
-        <ButtonPanel clickHandler={this.buttonPressed} />
-      </>
-    );
-  }
-}
+);
 
 export default App;
