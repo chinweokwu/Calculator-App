@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test Snapshot for Home component 1`] = `
+<div
+  className="home"
+>
+  <h1>
+     Home Page
+  </h1>
+  <p>
+     Welcome to Math Magicians Built with React
+  </p>
+</div>
+`;
+
+exports[`Snapshot test Snapshot for Homecomponent 1`] = `
+<div
+  className="quote"
+>
+  <div
+    className="login-box"
+  >
+    <h3>
+      
+    </h3>
+    <div
+      className="author"
+    >
+      
+    </div>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <span />
+      <span />
+      <span />
+      <span />
+      Change Quotes
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Snapshot test Snapshot for Quotes component 1`] = `
+<div
+  className="quote"
+>
+  <div
+    className="login-box"
+  >
+    <h3>
+      
+    </h3>
+    <div
+      className="author"
+    >
+      
+    </div>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <span />
+      <span />
+      <span />
+      <span />
+      Change Quotes
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Snapshot test Snapshot for component 1`] = `
+<div
+  className="quote"
+>
+  <div
+    className="login-box"
+  >
+    <h3>
+      
+    </h3>
+    <div
+      className="author"
+    >
+      
+    </div>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      <span />
+      <span />
+      <span />
+      <span />
+      Change Quotes
+    </button>
+  </div>
+</div>
+`;
