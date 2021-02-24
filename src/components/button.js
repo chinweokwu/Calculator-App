@@ -24,6 +24,7 @@ const Button = props => {
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
+  buttonPressed: PropTypes.func.isRequired,
 };
 
 export default Button;
