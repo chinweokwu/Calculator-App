@@ -17,18 +17,18 @@ beforeEach(() => {
 });
 
 describe('Calculator component', () => {
-  it('Displays 0 as the initial value', () => {
+  it('Displays a value of 0 as the initial value', () => {
     expect(screen.getAllByText(/0/)).toHaveLength(2);
   });
 
-  it('Updates the display when a number is clicked', () => {
-    clickButton(/3/);
-    clickButton(/7/);
+  it('Displays when a number is clicked', () => {
+    clickButton(/5/);
+    clickButton(/8/);
 
-    expect(screen.getByText(/37/)).toBeInTheDocument();
+    expect(screen.getByText(/58/)).toBeInTheDocument();
   });
 
-  it('Displays the operation sign just clicked', () => {
+  it('Displays the operator sign when clicked', () => {
     clickButton(/5/);
     clickButton(/\+\//);
 
@@ -36,25 +36,25 @@ describe('Calculator component', () => {
   });
 
   it('Changes the sign of displayed number when "+/-" is clicked', () => {
-    clickButton(/6/);
-    clickButton(/4/);
+    clickButton(/2/);
+    clickButton(/3/);
     clickButton(/\+\/-/);
 
-    expect(screen.getByText(/-64/)).toBeInTheDocument();
+    expect(screen.getByText(/-23/)).toBeInTheDocument();
   });
 
-  it('Converts the displayed number into a percentage when "%" is clicked', () => {
-    clickButton(/3/);
+  it('Converts the number into a percentage when clicked', () => {
+    clickButton(/9/);
     clickButton(/6/);
     clickButton(/0/);
     clickButton(/%/);
 
-    expect(screen.getByText(/3.6/)).toBeInTheDocument();
+    expect(screen.getByText(/9.6/)).toBeInTheDocument();
   });
 
   it('Sets the current number to 0 when "AC" is clicked', () => {
-    clickButton(/5/);
-    clickButton(/2/);
+    clickButton(/7/);
+    clickButton(/8/);
     clickButton(/AC/);
 
     expect(screen.getAllByText(/0/)).toHaveLength(2);
