@@ -24,13 +24,7 @@ const Button = props => {
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  // wide: PropTypes.bool,
-  // color: PropTypes.string,
-};
-
-Button.defaultProps = {
-  // color: 'orange',
-  // wide: false,
+  buttonPressed: PropTypes.func.isRequired,
 };
 
 export default Button;
