@@ -8,8 +8,9 @@ exports[`Snapshot test Snapshot for Quotes component 1`] = `
     className="login-box"
   >
     <h3>
-      
+      loading...
     </h3>
+    <h3 />
     <div
       className="author"
     >
